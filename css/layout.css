@@ -1,0 +1,230 @@
+@import "reset.css";
+
+body {
+	font-size: 12px;
+	font-family: Tahoma, Arial, sans-serif;
+	background-color: #F2F2F2;
+	background-image: url("../images/background.png");
+}
+
+h1 {
+	font-size: 16px;
+	font-weight: normal;
+	margin-bottom: 10px;
+}
+
+p {
+	color: #666;
+}
+
+header {
+	border-bottom: 1px solid rgba(0,0,0,0.05);
+	width: 100%;
+}
+	
+	header div#logo {
+		float: left;
+		/*font-family: serif;
+		font-style: italic;*/
+		font-size: 16px;
+		text-transform: uppercase;
+		opacity: 0.5;
+	}
+		header div#logo span#prof {
+			//font-weight: bold;
+			font-size: 12px;
+			text-transform: none;
+			color: #333;
+		}
+
+	header menu ul {
+		float: right;
+		list-style: none;
+	}
+	
+	header menu ul li {
+		display: inline;
+		padding: 8px 12px;
+		margin-left: 6px;
+		cursor: pointer;
+		text-transform: uppercase;
+		color: #666;
+		opacity: 0.5;
+	}		
+		header menu ul li:hover, header menu ul li.active {
+			border-top: 2px solid;
+		}
+		
+	header menu:after {
+		content: ".";
+		display: block;
+		height: 0;
+		clear: both; 
+		visibility: hidden;
+	}
+
+footer {
+	border-top: 1px solid rgba(0,0,0,0.05);
+	width: 100%;
+	text-align: center;
+}
+
+	footer p#social {
+		margin-bottom: 15px;
+	}
+
+	footer p#social img {
+		opacity: 0.15;
+		cursor: pointer;
+		margin: 0 15px;
+	}
+	footer p#social img:hover {
+		opacity: 0.3;
+	}
+	
+	footer p#copy {
+		font-size: smaller;
+		color: #999;
+	}
+	
+	footer p#copy a {
+		color: #666;
+		text-decoration: none;
+	}
+	footer p#copy a:hover {
+		color: #333;
+		//text-decoration: underline;
+		border-bottom: 1px dotted #333;
+	}
+
+section#pages {
+	background-color: #FFF;
+	width: 100%;
+	overflow: hidden;
+	min-height: 280px;
+}
+
+	section#pages article.container:after {
+		content: ".";
+		display: block;
+		height: 0;
+		clear: both; 
+		visibility: hidden;
+	}
+
+section#pages>article, header>article, footer>article {
+	padding: 20px;
+	width: 920px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+	section#pages article.container {
+		width: 3840px;
+	}
+
+	section#pages article.page {
+		float: left;
+		width: 960px;
+	}
+
+	section#pages article#home div#slideshow {
+		width: 920px;
+		height: 500px;
+		//overflow: hidden;
+		position: relative;
+		padding-top: 10px;
+	}
+	
+	section#pages article#home div#slideshow img {
+		position: absolute;
+		display: none;
+		box-shadow: 0 0 5px #CCC;
+		-webkit-box-shadow: 0 0 5px #CCC;
+	}
+
+	section#pages article#about>div {
+		width: 280px;
+		margin: 0 20px;
+		float: left;
+		text-align: justify;
+	}	section#pages article#about>div:first-child { margin-left: 0; }
+		section#pages article#about>div:last-child { margin-right: 0; }
+		section#pages article#about p {
+			color: #666;
+			line-height: 150%;
+			margin-top: 5px;
+		}
+	section#pages article#about div img {
+		box-shadow: 0 0 5px #CCC;
+		-webkit-box-shadow: 0 0 5px #CCC;
+	}
+		
+	section#pages article#contacts>div {
+		width: 280px;
+		margin: 0 20px;
+		float: left;
+		text-align: justify;
+	}	section#pages article#contacts>div:first-child { margin-left: 0; width: 600px; }
+		section#pages article#contacts>div:last-child { margin-right: 0; }
+		
+		.contact input[type=text], .contact textarea { width: 300px; }
+	
+	section#pages article#works div.work>div {
+		width: 280px;
+		margin: 0 20px;
+		float: left;
+		text-align: justify;
+	}	section#pages article#works div.work>div:first-child { margin-left: 0; width: 600px; }
+		section#pages article#works div.work>div:last-child { margin-right: 0; }
+	section#pages article#works div.work {
+		margin-bottom: 20px;
+		padding-bottom: 20px;
+		border-bottom: 1px solid #EEE;
+	}
+	section#pages article#works div.work:last-child {
+		margin-bottom: 0;
+		padding-bottom: 0;
+		border-bottom: none;
+	}
+	section#pages article#works div.work:after {
+		content: ".";
+		display: block;
+		height: 0;
+		clear: both; 
+		visibility: hidden;
+	}
+	section#pages article#works div.work img {
+		box-shadow: 0 0 5px #CCC;
+		-webkit-box-shadow: 0 0 5px #CCC;
+	}
+	section#pages article#works div.work h1 {
+		margin-bottom: 10px;
+		font-size: 16px;
+		font-weight: normal;
+	}
+	section#pages article#works div.work h2 {
+		margin-bottom: 10px;
+		font-weight: normal;
+		text-transform: uppercase;
+		color: #999;
+	}
+	section#pages article#works div.work p {
+		line-height: 150%;
+		color: #666;
+		margin-top: 5px;
+	}
+	section#pages article#works div.work p.more {
+		text-align: right;
+		font-style: italic;
+		font-size: smaller;
+		margin-top: 10px;
+	}
+	section#pages article#works div.work p.more a {
+		color: #999;
+		text-decoration: none;
+	}
+	section#pages article#works div.work p.more a:hover {
+		color: #666;
+		border-bottom: 1px dotted #666;
+	}
